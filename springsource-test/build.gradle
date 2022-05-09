@@ -1,0 +1,30 @@
+plugins {
+    //the issue was missing the java-library plugin which introduces the api method.
+    //注意是'java-library'，自动生成的是'java'
+    id 'java-library'
+}
+
+group 'org.springframework'
+version '5.3.11-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+
+    //spring核心容器
+    api(project(":spring-context"))
+    api(project(":spring-aspects")) //引入AOP
+//    api(project(":spring-jdbc")) //引入事物
+    // https://mvnrepository.com/artifact/org.projectlombok/lombok
+    compileOnly group: 'org.projectlombok', name: 'lombok', version: '1.18.12'
+
+
+}
+
+test {
+    useJUnitPlatform()
+}

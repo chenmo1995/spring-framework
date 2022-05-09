@@ -36,7 +36,7 @@ class DefaultApplicationStartup implements ApplicationStartup {
 		return DEFAULT_STARTUP_STEP;
 	}
 
-
+	//容器启动过程状态的封装类
 	static class DefaultStartupStep implements StartupStep {
 
 		private final DefaultTags TAGS = new DefaultTags();

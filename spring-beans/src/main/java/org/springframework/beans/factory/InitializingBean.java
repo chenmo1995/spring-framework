@@ -25,6 +25,8 @@ package org.springframework.beans.factory;
  * init method, for example in an XML bean definition. For a list of all bean
  * lifecycle methods, see the {@link BeanFactory BeanFactory javadocs}.
  *
+ * 也是bean的后置处理器，在属性赋值完毕后执行；重点在于额外处理bean，功能上的增强，而不是改变bean
+ *
  * @author Rod Johnson
  * @author Juergen Hoeller
  * @see DisposableBean

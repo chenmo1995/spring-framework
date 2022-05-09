@@ -55,7 +55,7 @@ public abstract class AspectJProxyUtils {
 					foundAspectJAdvice = true;
 					break;
 				}
-			}
+			}// 链里面有一个 ExposeInvocationInterceptor 拦截器
 			if (foundAspectJAdvice && !advisors.contains(ExposeInvocationInterceptor.ADVISOR)) {
 				advisors.add(0, ExposeInvocationInterceptor.ADVISOR);
 				return true;

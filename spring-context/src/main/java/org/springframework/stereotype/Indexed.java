@@ -83,6 +83,7 @@ import java.lang.annotation.Target;
  *
  * @author Stephane Nicoll
  * @since 5.0
+ * 加速注解，标注了的组件启动会快速加载
  */
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)

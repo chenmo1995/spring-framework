@@ -45,7 +45,10 @@ import org.springframework.lang.Nullable;
  * {@code PriorityOrdered} or {@code Ordered} interface will be ignored for
  * programmatically registered post-processors. Furthermore, the
  * {@link org.springframework.core.annotation.Order @Order} annotation is not
- * taken into account for {@code BeanPostProcessor} beans.
+ * taken into account for {@code BeanPostProcessor}
+ *
+ * bean的后置增强组件；bean
+ *
  *
  * @author Juergen Hoeller
  * @author Sam Brannen
